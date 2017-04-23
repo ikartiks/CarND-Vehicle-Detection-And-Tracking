@@ -10,11 +10,12 @@ The goals / steps of this project are the following:
 * Estimate a bounding box for vehicles detected.
 
 [//]: # (Image References)
-[image1]: car.png
-[image11]:notcar.png
-[image4]: sliding_window.ong
-[image5]: bboxes_and_heat.png
-[video1]: outputNew.mp4
+
+![car.png](car.png)
+![notcar.png](notcar.png)
+![sliding_window.png](sliding_window.png)
+![notcar.png](bboxes_and_heat.png)
+![outputNew.mp4](outputNew.mp4)
 
 
 ###Histogram of Oriented Gradients (HOG)
@@ -35,18 +36,18 @@ I also tried GridSearchCV which is commented out in earlier cells
 
 ####1. I implimented sliding search in cell 12 and 13
 
-![alt text][image3]:sliding_window.png
+![image3](sliding_window.png)
 
 ####2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
 Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
-
-[image5]: bboxes_and_heat.png
+![bboxes_and_heat.png](bboxes_and_heat.png)
 ---
 
 ### Video Implementation
 
-####1. My Video is outputNew.mp4
+####1. Video
+Here's a [link to my video result](outputNew.mp4)
 
 
 ####2. I implemnted filter for false positives in cell 6 and cell 7 w
@@ -58,3 +59,4 @@ I recorded the positions of positive detections in each frame of the video.  Fro
 ####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 I need to comeup with a better algo to avoid false positives, and also fit a proper bounding box.
+
